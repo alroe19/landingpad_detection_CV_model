@@ -10,7 +10,7 @@ def main():
     # Train YOLOv11n model on custom dataset
     model.train(
         data="dataset/data.yaml",       # path to YAML file
-        epochs=120,                     # number of training epochs
+        epochs=200,                     # number of training epochs
         imgsz=640,                      # input image size
         batch=16,                       # batch size
         device=0,                       # GPU=0, CPU="cpu"
