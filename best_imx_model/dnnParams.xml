@@ -3,7 +3,7 @@
     <networks>
         <network name="best_imx" ordinal="0" type="">
             <inputTensors>
-                <inputTensor persistency="0" ordinal="0" name="Placeholder.input.uid1:0" l2Offset="2155008" numOfDimensions="3" bitsPerElement="8" shift="0" scale="0.00390625" format="unsigned">
+                <inputTensor persistency="0" ordinal="0" name="Placeholder.input.uid1:0" l2Offset="2117824" numOfDimensions="3" bitsPerElement="8" shift="0" scale="0.00390625" format="unsigned">
                     <dimensions>
                         <dimension size="3" serializationOrder="2" ordinal="0" padding="0"/>
                         <dimension size="640" serializationOrder="1" ordinal="1" padding="0"/>
@@ -12,22 +12,22 @@
                 </inputTensor>
             </inputTensors>
             <outputTensors>
-                <outputTensor ordinal="3" name="transform-0-/MultiClassNMSWithIndices:0" l2Offset="941568" numOfDimensions="1" bitsPerElement="16" shift="0" scale="1.0" format="signed">
+                <outputTensor ordinal="3" name="transform-0-/MultiClassNMSWithIndices:0" l2Offset="903360" numOfDimensions="1" bitsPerElement="16" shift="0" scale="1.0" format="signed">
                     <dimensions>
                         <dimension size="1" serializationOrder="0" ordinal="0" padding="0"/>
                     </dimensions>
                 </outputTensor>
-                <outputTensor ordinal="2" name="transform-1-/MultiClassNMSWithIndices:0" l2Offset="942592" numOfDimensions="1" bitsPerElement="16" shift="0" scale="1.0" format="signed">
+                <outputTensor ordinal="2" name="transform-1-/MultiClassNMSWithIndices:0" l2Offset="905408" numOfDimensions="1" bitsPerElement="16" shift="0" scale="1.0" format="signed">
                     <dimensions>
                         <dimension size="300" serializationOrder="0" ordinal="0" padding="0"/>
                     </dimensions>
                 </outputTensor>
-                <outputTensor ordinal="1" name="transform-2-/MultiClassNMSWithIndices:0" l2Offset="940544" numOfDimensions="1" bitsPerElement="8" shift="0" scale="0.00390625" format="unsigned">
+                <outputTensor ordinal="1" name="transform-2-/MultiClassNMSWithIndices:0" l2Offset="904384" numOfDimensions="1" bitsPerElement="8" shift="0" scale="0.00390625" format="unsigned">
                     <dimensions>
                         <dimension size="300" serializationOrder="0" ordinal="0" padding="0"/>
                     </dimensions>
                 </outputTensor>
-                <outputTensor ordinal="0" name="transform-3-/MultiClassNMSWithIndices:0" l2Offset="921088" numOfDimensions="2" bitsPerElement="16" shift="0" scale="0.03125" format="signed">
+                <outputTensor ordinal="0" name="transform-3-/MultiClassNMSWithIndices:0" l2Offset="883904" numOfDimensions="2" bitsPerElement="16" shift="0" scale="0.03125" format="signed">
                     <dimensions>
                         <dimension size="300" serializationOrder="0" ordinal="0" padding="0"/>
                         <dimension size="4" serializationOrder="1" ordinal="1" padding="0"/>
@@ -36,5 +36,5 @@
             </outputTensors>
         </network>
     </networks>
-    <l2memory totalSize="8388480" coefficientsSize="2768256" reservedMemorySize="1024" networksRuntimeSize="4699136"/>
+    <l2memory totalSize="8388480" coefficientsSize="2805440" reservedMemorySize="1024" networksRuntimeSize="4699136"/>
 </dnnParams>

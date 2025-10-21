@@ -27,7 +27,7 @@ def run_inference():
     model = YOLO('best.pt')  # Load exported model
 
     # Run inference on an image
-    results = model("dataset/valid/images/107blue_jpg.rf.6f9e70eb3ef8650812878c6f3f4e65ca.jpg")
+    results = model("dataset/valid/images/WhatsApp-Image-2022-04-17-at-3-03-27-PM_jpeg.rf.b1d1d79f38be84f047f13a9417bee637.jpg")
 
 
     # Visualize the results
@@ -45,5 +45,5 @@ def run_inference():
 
 
 if __name__ == "__main__":
-    # main()
-    run_inference()
+    main()
+    # run_inference()
