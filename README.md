@@ -75,6 +75,7 @@ In other words, the script replaces the class ID (first number) in every label l
 
 ## Model training
 
+WIP
 
 ## Model export
 
@@ -140,7 +141,6 @@ pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https
 
 5. Install Additional Dependencies
 
-***Note:*** Use pt for PyTorch (or tf for TensorFlow if needed). Here we use PyTorch.
 ```Bash
 pip install onnx
 pip install opset
@@ -148,6 +148,7 @@ pip install opset
 
 6. Install the IMX500 Converter
 
+***Note:*** Use pt for PyTorch (or tf for TensorFlow if needed). Here we use PyTorch.
 ```Bash
 pip install imx500-converter[pt]
 ```
@@ -209,10 +210,28 @@ To finalize the conversion pipeline, you’ll need the files `packerOut.zip` and
 
 ### Part 2: On-device finalization
 
+The final part of the conversion pipeline converts the `packerOut.zip` and `labels.txt` to the RPK format compatiable with the IMX500 module. 
 
-Recommended:
-- Use Anaconda and create a seperate environment
+For the pupose of this repo, the target divice is a Rapsberry Pi, since this model is going to be run on the Raspberry Pi AI camera module.
 
-Install pyTorch 
+On your Raspberry Pi, install the IMX tools using:
 
-Then install ultralytics. Dont do it the other wayt around or you make get the incorrect version of pyTorch.
+```Bash
+sudo apt install imx500-all
+```
+
+To perform the final part or the conversion, run:
+
+```Bash
+imx500-package -i <path to packerOut.zip> -o <output folder>
+```
+
+Or you can navigate to the folder where you saved `packerOut.zip` and `labels.txt` file and run:
+
+```Bash
+imx500-package -i packerOut.zip -o .
+```
+
+This will unpack your model and convert it to an RPK file, most likely named `network.rpk`. 
+
+Running this model is beyond the scope of this guide, but it can be used with the Picamera2 IMX500 examples found here: [Picamera2 IMX500 exampels](https://github.com/raspberrypi/picamera2/tree/main/examples/imx500).
