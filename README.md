@@ -235,3 +235,10 @@ imx500-package -i packerOut.zip -o .
 This will unpack your model and convert it to an RPK file, most likely named `network.rpk`. 
 
 Running this model is beyond the scope of this guide, but it can be used with the Picamera2 IMX500 examples found here: [Picamera2 IMX500 exampels](https://github.com/raspberrypi/picamera2/tree/main/examples/imx500).
+
+# Further reading
+
+- https://github.com/LukeDitria/RasPi_YOLO
+- https://docs.ultralytics.com/integrations/sony-imx500/
+- https://github.com/ultralytics/ultralytics?tab=readme-ov-file
+- https://developer.aitrios.sony-semicon.com/docs/raspberry-pi-ai-camera/imx500-converter?version=3.16.1&progLang=
